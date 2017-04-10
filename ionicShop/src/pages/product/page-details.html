@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Sub menu list
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!--<ion-content padding>
+  <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}"></ion-icon>
+  {{ item.description }}
+</ion-content>-->
+
+
+<ion-content>
+  <ion-list>
+    
+    <button ion-item *ngFor="let item of item" icon-left>
+      <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-left></ion-icon>
+      {{ item.title }}
+    </button>
+  </ion-list>
+
+</ion-content>

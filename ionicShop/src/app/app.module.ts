@@ -11,6 +11,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { ProductPage }         from '../pages/product/product';
 //import {ProductNavDetailsPage} from '../pages/product/product';
+import { Food }                        from '../pages/food/food';
+import { myFoodNavigationDetailsPage } from '../pages/food/food';
 
 import { ProductDataService }      from './services/dataService';
 
@@ -20,6 +22,8 @@ import { ProductDataService }      from './services/dataService';
     HomePage,
     ListPage,
     ProductPage,
+    Food,
+     myFoodNavigationDetailsPage 
     //ProductNavDetailsPage
   ],
   imports: [
@@ -32,6 +36,8 @@ import { ProductDataService }      from './services/dataService';
     HomePage,
     ListPage,
     ProductPage,
+    Food,
+     myFoodNavigationDetailsPage 
     //ProductNavDetailsPage
   ],
   providers: [
