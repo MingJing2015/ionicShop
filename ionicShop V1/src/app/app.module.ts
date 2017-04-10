@@ -9,18 +9,11 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { ProductPage }         from '../pages/product/product';
-//import {ProductNavDetailsPage} from '../pages/product/product';
-
-import { ProductDataService }      from './services/dataService';
-
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
-    ProductPage,
-    //ProductNavDetailsPage
+    ListPage
   ],
   imports: [
     BrowserModule,
@@ -30,13 +23,10 @@ import { ProductDataService }      from './services/dataService';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
-    ProductPage,
-    //ProductNavDetailsPage
+    ListPage
   ],
   providers: [
     StatusBar,
-    ProductDataService,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
