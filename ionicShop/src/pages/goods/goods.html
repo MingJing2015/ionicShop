@@ -1,0 +1,73 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="openMenu()" >
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Action Sheets</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="action-sheets-basic-page">
+    
+  <button ion-button block (click)="openMenu()">
+    Show Action Sheet
+  </button>
+
+
+<button ion-button color="light">Light</button>
+<button ion-button>Default</button>
+<button ion-button color="secondary">Secondary</button>
+<button ion-button color="danger">Danger</button>
+<button ion-button color="dark" (click)="openMenu()" >Dark</button>
+
+<ion-card>
+
+  <ion-card-header>
+    Card Header
+  </ion-card-header>
+
+  <ion-card-content>
+    <!-- Add card content here! -->
+    123
+  </ion-card-content>
+
+</ion-card>
+
+<ion-card>
+
+  <!--/Users/mingjing/Desktop/ionicShop/ionicShop/src/pages/imgs/6s-1.jpeg-->
+  <img src="assets/imgs/X260-hero.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+    </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+  </ion-card-content>
+</ion-card>
+
+
+  <ion-card *ngFor="let item of myProducts">
+    <img src="assets/{{item.img1.slice(6, item.img1.length)}}"/>
+    <div class="card-title">{{item.goods_name}}</div>
+    <div class="card-subtitle">{{item.goods_id}}</div>
+  </ion-card>
+
+
+<!--   <button ion-item *ngFor="let item of myProducts" (click)="openNavDetailsPage(item)" icon-left>
+      <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-left></ion-icon>
+      {{ item.goods_name}}
+    </button>-->
+  
+
+</ion-content>
+
